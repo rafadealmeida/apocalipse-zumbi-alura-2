@@ -84,6 +84,9 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
         direcao = posicaoAleatoria - transform.position;
         movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
         }
+        else{
+             animacaoInimigo.PertoPlayer(false);
+        }
     }
 
     Vector3 AleatorizarPosicao()
