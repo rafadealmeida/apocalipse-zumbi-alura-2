@@ -60,7 +60,7 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
             animacaoInimigo.PertoPlayer(true);
             
         }    
-        else if (distancia<=2.5)
+        else if (distancia<=3)
         {
             animacaoInimigo.Atacar(true);
             
@@ -83,6 +83,7 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
     if(pertoSuficiente == false){
         direcao = posicaoAleatoria - transform.position;
         movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
+        
         }
         else{
              animacaoInimigo.PertoPlayer(false);
@@ -91,7 +92,8 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
 
     Vector3 AleatorizarPosicao()
     {
-        Vector3  posicao = Random.insideUnitSphere *10;
+        float raio =10f;
+        Vector3  posicao = Random.insideUnitSphere *raio;
         posicao+= transform.position; 
         posicao.y = transform.position.y;
 
@@ -99,10 +101,7 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
     }
 
     void AtacaJogador(){
-       // Time.timeScale = 0;
-       // Jogador.GetComponent<controlaJogador>().TextoGamerOver.SetActive(true);
-       //  Jogador.GetComponent<controlaJogador>().vivo = false;
-
+      
         int dano = Random.Range(10,21);
        Jogador.GetComponent<controlaJogador>().TomarDano(dano);
     }
