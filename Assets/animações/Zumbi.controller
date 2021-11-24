@@ -36,7 +36,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: PertoPlayer
-    m_EventTreshold: 0.3
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2850147067181461378}
   m_Solo: 0
@@ -164,7 +164,7 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Movendo
+  - m_Name: Mover
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -277,7 +277,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: PertoPlayer
-    m_EventTreshold: 0.3
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3277881377353188951}
   m_Solo: 0

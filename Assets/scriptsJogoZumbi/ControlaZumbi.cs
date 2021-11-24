@@ -45,8 +45,10 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
 
             movimentoInimigo.Rotacionar(direcao);
 
+            //animacaoInimigo.Movimentar(direcao.magnitude);
+
         if (distancia >= 25 ){
-            animacaoInimigo.PertoPlayer(true);
+           animacaoInimigo.PertoPlayer(true);
             Vagar();
             
         }
@@ -57,7 +59,7 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
             movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
            
             animacaoInimigo.Atacar(false);
-            animacaoInimigo.PertoPlayer(true);
+           animacaoInimigo.PertoPlayer(true);
             
         }    
         else if (distancia<=3)
