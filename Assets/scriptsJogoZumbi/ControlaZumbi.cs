@@ -12,6 +12,8 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
     private Status statusZumbi;
     private Vector3 direcao;
     private Vector3 posicaoAleatoria;
+    private float contadorVagar;
+    private float tempoEntrePosicaoAleatoria = 4;
    
    
     public AudioClip MorteZumbi;
@@ -67,9 +69,15 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
     }
         
     void Vagar(){
-        posicaoAleatoria = AleatorizarPosicao();
-        direcao = posicaoAleatoria - transform.position;
 
+        contadorVagar -= Time.deltaTime;
+
+    if (contadorVagar<=0){
+
+        posicaoAleatoria = AleatorizarPosicao();
+        contadorVagar+= tempoEntrePosicaoAleatoria;
+    }
+        direcao = posicaoAleatoria - transform.position;
         movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
     }
 

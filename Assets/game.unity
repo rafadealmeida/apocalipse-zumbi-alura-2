@@ -13967,6 +13967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zumbi (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1374577511837298, guid: 35861510587b7489780fe86970823679, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19562,6 +19566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zumbi (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1334144204180584, guid: 35861510587b7489780fe86970823679, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -25098,6 +25106,10 @@ PrefabInstance:
     - target: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
       propertyPath: m_Name
       value: Zumbi
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4941635705825534, guid: 35861510587b7489780fe86970823679, type: 3}
       propertyPath: m_RootOrder
