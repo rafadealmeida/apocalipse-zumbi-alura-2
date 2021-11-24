@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,10 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
     private MovimentoPersonagem movimentoInimigo;
     private AnimacaoPersonagem animacaoInimigo;
     private Status statusZumbi;
+    private Vector3 direcao;
+    private Vector3 posicaoAleatoria;
+   
+   
     public AudioClip MorteZumbi;
     
     public AudioSource audioSourceZumbi;
@@ -32,32 +37,50 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
         
         float distancia = Vector3.Distance(transform.position,Jogador.transform.position);// calcula a distancia entre dois elementos
             
-        Vector3 direcao = Jogador.transform.position - transform.position;  // direção para percorrer a distancia entre dois elementos.
+        direcao = Jogador.transform.position - transform.position;  // direção para percorrer a distancia entre dois elementos.
 
             // Definindo uma variavel de rotação que olhara para a direção de aonde estas nosso player. 
 
             movimentoInimigo.Rotacionar(direcao);
 
-        if (distancia>3 && distancia < 25 ){
+        if (distancia >= 25 ){
+            animacaoInimigo.PertoPlayer(true);
+            Vagar();
+            
+        }
+
+        else if (distancia>3){
 
             //O mover o personagem pela fisica (Da onde a fisica deixou ele + a direção que ele deve ir normalizada, para igualar a o movimento, *velocidade do zumbi *Time.deltaTime, para deixar mais liso)
-           movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
+            movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
            
             animacaoInimigo.Atacar(false);
             animacaoInimigo.PertoPlayer(true);
             
         }    
-        else if (distancia<=3)
+        else if (distancia<=2.5)
         {
             animacaoInimigo.Atacar(true);
             
         }
-        else if (distancia >= 25 ){
-            animacaoInimigo.PertoPlayer(false);
-            
-        }
+        
     }
         
+    void Vagar(){
+        posicaoAleatoria = AleatorizarPosicao();
+        direcao = posicaoAleatoria - transform.position;
+
+        movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
+    }
+
+    Vector3 AleatorizarPosicao()
+    {
+        Vector3  posicao = Random.insideUnitSphere *10;
+        posicao+= transform.position; 
+        posicao.y = transform.position.y;
+
+        return posicao;
+    }
 
     void AtacaJogador(){
        // Time.timeScale = 0;
