@@ -77,8 +77,13 @@ public class ControlaZumbi : MonoBehaviour, Imatavel
         posicaoAleatoria = AleatorizarPosicao();
         contadorVagar+= tempoEntrePosicaoAleatoria;
     }
+    
+    bool pertoSuficiente =Vector3.Distance(transform.position,posicaoAleatoria) <= 0.05; 
+
+    if(pertoSuficiente == false){
         direcao = posicaoAleatoria - transform.position;
         movimentoInimigo.Movimentar(direcao, statusZumbi.Velocidade);
+        }
     }
 
     Vector3 AleatorizarPosicao()
