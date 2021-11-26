@@ -8,16 +8,26 @@ public class GeradorZumbi : MonoBehaviour
     float contadorTempo = 0;
     public float tempoRespawn = 1;
     public LayerMask LayerZumbi;
+    public float DistanciaRespawn = 20f;
+    private GameObject jogador;
 
- 
+    private void Start() {
+        jogador = GameObject.FindWithTag("Tags.Jogador");
+    }
+    
     void Update()
     {
-        contadorTempo +=Time.deltaTime;
 
-        if(contadorTempo>= tempoRespawn){
-            StartCoroutine(GerarNovoZumbi());
-            contadorTempo = 0;
+        if( Vector3.Distance(transform.position,jogador.transform.position)>DistanciaRespawn){
+
+            contadorTempo +=Time.deltaTime;
+
+            if(contadorTempo>= tempoRespawn){
+                StartCoroutine(GerarNovoZumbi());
+                contadorTempo = 0;
+            }
         }
+        
         IEnumerator GerarNovoZumbi()
         {   
             Vector3 posicaoCriacao = AleatorizarPosicaoZumbi();
