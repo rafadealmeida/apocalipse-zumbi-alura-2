@@ -16,13 +16,7 @@ public class Interface : MonoBehaviour
         SliderVidaJogador.maxValue = scriptControlaJogador.statusJogador.Vida;
         AtualizarSliderVidaJogador();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void AtualizarSliderVidaJogador(){
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
     }

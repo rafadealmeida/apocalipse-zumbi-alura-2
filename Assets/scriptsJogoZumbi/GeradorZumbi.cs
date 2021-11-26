@@ -12,7 +12,7 @@ public class GeradorZumbi : MonoBehaviour
     private GameObject jogador;
 
     private void Start() {
-        jogador = GameObject.FindWithTag("Tags.Jogador");
+        jogador = GameObject.FindWithTag(Tags.Jogador);
     }
     
     void Update()
@@ -27,7 +27,13 @@ public class GeradorZumbi : MonoBehaviour
                 contadorTempo = 0;
             }
         }
-        
+
+        void OnDrawGizmos()
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, DistanciaRespawn);
+        }
+
         IEnumerator GerarNovoZumbi()
         {   
             Vector3 posicaoCriacao = AleatorizarPosicaoZumbi();
@@ -47,7 +53,7 @@ public class GeradorZumbi : MonoBehaviour
             float raio = 3f;
             Vector3 posicao = Random.insideUnitSphere*raio;
             posicao+=transform.position;
-            posicao.y = 0;
+            posicao.y = transform.position.y;
 
             return posicao;
         }

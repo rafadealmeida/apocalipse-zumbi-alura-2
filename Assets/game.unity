@@ -3385,6 +3385,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!1 &304764490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1720713872215468, guid: bec1efa2b295d4ecdbe8309f846111e7, type: 3}
@@ -6530,6 +6531,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!4 &541881394
 Transform:
   m_ObjectHideFlags: 0
@@ -6976,6 +6978,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!1 &577126749
 GameObject:
   m_ObjectHideFlags: 0
@@ -14896,6 +14899,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!4 &1253047625
 Transform:
   m_ObjectHideFlags: 0
@@ -16912,6 +16916,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!1001 &1418089200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17427,6 +17432,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!4 &1448023607
 Transform:
   m_ObjectHideFlags: 0
@@ -19303,6 +19309,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!4 &1574245209
 Transform:
   m_ObjectHideFlags: 0
@@ -19311,7 +19318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574245207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -721.07, y: -347.96, z: -427.87}
+  m_LocalPosition: {x: -721.07, y: -347.5, z: -427.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405181100}
@@ -21077,6 +21084,7 @@ MonoBehaviour:
   LayerZumbi:
     serializedVersion: 2
     m_Bits: 128
+  DistanciaRespawn: 20
 --- !u!1 &1722053778
 GameObject:
   m_ObjectHideFlags: 0
