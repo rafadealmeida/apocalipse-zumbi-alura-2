@@ -46,3 +46,7 @@ Logs/shadercompiler-UnityShaderCompiler.exe7.log
 Logs/AssetImportWorker0.log
 Logs/ApiUpdaterCheck.txt
 Logs/AssetImportWorker0-prev.log
+*.log
+*.log
+*.log
+Logs/AssetImportWorker0.log
