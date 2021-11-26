@@ -3382,6 +3382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 3
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &304764490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1720713872215468, guid: bec1efa2b295d4ecdbe8309f846111e7, type: 3}
@@ -6524,6 +6527,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 2
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &541881394
 Transform:
   m_ObjectHideFlags: 0
@@ -6967,6 +6973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 4
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &577126749
 GameObject:
   m_ObjectHideFlags: 0
@@ -14884,6 +14893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 2.5
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &1253047625
 Transform:
   m_ObjectHideFlags: 0
@@ -16897,6 +16909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 3
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &1418089200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17409,6 +17424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 1.5
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &1448023607
 Transform:
   m_ObjectHideFlags: 0
@@ -19282,6 +19300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 1
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &1574245209
 Transform:
   m_ObjectHideFlags: 0
@@ -21053,6 +21074,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 1063500868937916, guid: 35861510587b7489780fe86970823679, type: 3}
   tempoRespawn: 3
+  LayerZumbi:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1722053778
 GameObject:
   m_ObjectHideFlags: 0
