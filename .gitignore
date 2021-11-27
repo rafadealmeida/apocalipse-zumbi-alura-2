@@ -50,3 +50,5 @@ Logs/AssetImportWorker0-prev.log
 *.log
 *.log
 Logs/AssetImportWorker0.log
+*.log
+Logs/AssetImportWorker0.log

@@ -9,13 +9,12 @@ public class Interface : MonoBehaviour
     public Slider SliderVidaJogador;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         scriptControlaJogador = GameObject.FindWithTag("Player").GetComponent<controlaJogador>();
 
-        SliderVidaJogador.maxValue = 100 ;
-        //scriptControlaJogador.statusJogador.Vida;
-        AtualizarSliderVidaJogador();
+        SliderVidaJogador.maxValue =100; //scriptControlaJogador.statusJogador.Vida;
+       AtualizarSliderVidaJogador();
     }
     
     public void AtualizarSliderVidaJogador(){
